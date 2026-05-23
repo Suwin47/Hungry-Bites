@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offers Page</title>
+    <link rel="stylesheet" href="offers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <div class="navbar">
+        <img src="./images/download.svg" alt="HungryBites Logo" class="logo">
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for Restaurants or Foods">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./restaurants.html">Restaurants</a></li>
+            <li><a href="./offers.html">Offers</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="fas fa-user"></i></a></li>
+        </ul>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="menu">
+        <i class="fa-solid fa-bars menu-icon" id="menu-btn"></i>
+        <div class="mobile-menu" id="mobile-menu">
+
+            <i class="fa-solid fa-xmark close-icon" id="close-btn"></i>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./restaurants.html">Restaurants</a></li>
+                <li><a href="./offers.html">Offers</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Offer Poster-->
+    <div class="poster">
+        <div class="poster-content">
+            <h1>Restaurants with Great Offers</h1>
+            <p>Discover the best food deals near you</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+        <button class="active">All</button>
+        <button>Biryani</button>
+        <button>Burger</button>
+        <button>Pizza</button>
+        <button>Chinese</button>
+        <button>Desserts</button>
+    </div>
+
+    <!--Offers restaurants-->
+
+    <div class="restaurant-list">
+        <div class="restaurant-item">
+            <div class="rest-image">
+                <img src="./images/pizza3.jpg" class="slide active">
+                <p class="offer-tag">50% OFF</p>
+            </div>
+            <div class="rest-content">
+                <h3>Pizza Hut</h3>
+                <p>Pizza, Fast Food</p>
+                <span>⭐4.5</span>
+                <div class="rest-price">
+                    <p>₹200 for one</p>
+                    <p>30 mins</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="restaurant-item">
+            <div class="rest-image">
+                <img src="./images/Burger2.jpg" class="slide active">
+                <p class="offer-tag">70% OFF</p>
+            </div>
+            <div class="rest-content">
+                <h3>Burger King</h3>
+                <p>Burgers, Fries</p>
+                <span>⭐4.3</span>
+                <div class="rest-price">
+                    <p>₹150 for one</p>
+                    <p>25 mins</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="restaurant-item">
+            <div class="rest-image">
+                <img src="./images/bbq off.jpg" class="slide active">
+                <p class="offer-tag">40% OFF</p>
+            </div>
+            <div class="rest-content">
+                <h3>BBQ Nation</h3>
+                <p>Grill, BBQ</p>
+                <span>⭐4.7</span>
+                <div class="rest-price">
+                    <p>₹300 for one</p>
+                    <p>40 mins</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="restaurant-item">
+            <div class="rest-image">
+                <img src="./images/chinese off.jpg" class="slide active">
+                <p class="offer-tag">60% OFF</p>
+            </div>
+            <div class="rest-content">
+                <h3>Chinese Wok</h3>
+                <p>Noodles, Chinese</p>
+                <span>⭐4.2</span>
+                <div class="rest-price">
+                    <p>₹250 for one</p>
+                    <p>35 mins</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="restaurant-item">
+            <div class="rest-image">
+                <img src="./images/biryani.jpg" class="slide active">
+                <p class="offer-tag">55% OFF</p>
+            </div>
+
+            <div class="rest-content">
+                <h3>Biryani Palace</h3>
+                <p>Biryani, Indian</p>
+                <span>⭐4.6</span>
+
+                <div class="rest-price">
+                    <p>₹220 for one</p>
+                    <p>28 mins</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="restaurant-item">
+            <div class="rest-image">
+                <img src="./images/pasta.jpg" class="slide active">
+                <p class="offer-tag">45% OFF</p>
+            </div>
+
+            <div class="rest-content">
+                <h3>Pasta Corner</h3>
+                <p>Pasta, Italian</p>
+                <span>⭐4.4</span>
+
+                <div class="rest-price">
+                    <p>₹260 for one</p>
+                    <p>32 mins</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="restaurant-item">
+            <div class="rest-image">
+                <img src="./images/arabian.jpg" class="slide active">
+                <p class="offer-tag">35% OFF</p>
+            </div>
+
+            <div class="rest-content">
+                <h3>Arabian Grill</h3>
+                <p>Shawarma, Grill</p>
+                <span>⭐4.5</span>
+
+                <div class="rest-price">
+                    <p>₹180 for one</p>
+                    <p>20 mins</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="restaurant-item">
+            <div class="rest-image">
+                <img src="./images/dessert.jpg" class="slide active">
+                <p class="offer-tag">50% OFF</p>
+            </div>
+
+            <div class="rest-content">
+                <h3>Sweet Treats</h3>
+                <p>Desserts, Ice Cream</p>
+                <span>⭐4.7</span>
+
+                <div class="rest-price">
+                    <p>₹150 for one</p>
+                    <p>18 mins</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="footer-list">
+            <div class="footer-head">
+                <h1>HungryBites</h1>
+                <p>© 2026 HungryBites Limited</p>
+            </div>
+            <div class="footer-items">
+                <h3>Company</h3>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Team</a>
+                <a href="#">Blog</a>
+            </div>
+            <div class="footer-items ">
+                <h3>Support</h3>
+                <a href="#">Help Center</a>
+                <a href="#">Safety Information</a>
+                <a href="#">Cancellation Options</a>
+                <a href="#">Ride with Us</a>
+            </div>
+            <div class="footer-items">
+                <h3>Available in</h3>
+                <a href="#">Bangalore</a>
+                <a href="#">Chennai</a>
+                <a href="#">Hyderabad</a>
+                <a href="#">Delhi</a>
+            </div>
+            <div class="footer-items">
+                <h3>Legal</h3>
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+            <div class="footer-icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+<script src="offers.js"></script>
+</body>
+
+</html>
