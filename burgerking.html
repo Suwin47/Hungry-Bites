@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+
+<body>
+    <!--navbar-->
+
+    <div class="flex justify-between items-center m-10">
+        <h1 class="text-center text-4xl p-3 font-extrabold text-red-400">Burger King</h1>
+        <img src="./Images/burger-logo.png" class="w-52">
+
+        <div class="border border-black rounded-3xl mr-5 h-12 w-96 items-center flex gap-4 p-2" id="menu-search-input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input type="text" id="search" placeholder="Search for items....">
+        </div>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+
+    <!--main image section-->
+
+    <div>
+        <img src="./Images/burger-main.jpg" id="mainimage" class="transform transition duration-700 hover:scale-105">
+    </div>
+
+
+
+    <!--Menu selection-->
+
+    <div class="m-5">
+        <h1 class="text-3xl font-extrabold text-yellow-800 hover:text-red-500">Our Menu</h1>
+        <div class="flex justify-center items-center gap-24 text-xl font-semibold">
+            <h1 id="burger" class="cursor-pointer text-yellow-400 text-2xl  hover:text-red-500">Burger</h1>
+            <h1 id="sandwich" class="cursor-pointer text-yellow-400 text-2xl  hover:text-red-500">Sandwich</h1>
+            <h1 id="wrap" class="cursor-pointer text-yellow-400 text-2xl  hover:text-red-500">Wraps</h1>
+            <h1 id="beverages" class="cursor-pointer text-yellow-400 text-2xl  hover:text-red-500">Beverages</h1>
+
+        </div>
+    </div>
+
+
+
+
+    <!--burger-->
+
+
+
+    <div class="grid grid-cols-2  gap-40 md:grid-cols-3 p-10  ml-14 hidden" id="burger-menu">
+
+
+
+        <!--chicken burger-->
+        <div class="menu nonveg">
+
+            <div>
+
+                <img src="./Images/chicken-burger.jpg" class="w-52 h-52 cursor-pointer">
+
+            </div>
+
+            <div>
+                <h1 class="font-bold">Chicken Burger</h1>
+                <h1 class="m-1">$350</h1>
+                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.7(45)</h1>
+                <button class=" text-center w-24 h-12 text-black border bg-white border-black rounded">Add to
+                    Cart</button>
+
+            </div>
+
+        </div>
+
+
+
+        <!--Paneer burger-->
+        <div class="menu veg">
+
+            <div>
+
+                <img src="./Images/panner-burger.jpg" class="w-52 h-52 cursor-pointer">
+
+            </div>
+
+            <div>
+                <h1 class="font-bold">Paneer Burger</h1>
+                <h1 class="m-1">$300</h1>
+                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.7(45)</h1>
+                <button class=" text-center w-24 h-12 text-black border bg-white border-black rounded">Add to
+                    Cart</button>
+
+            </div>
+
+        </div>
+
+
+        <!--Veg burger-->
+        <div class="menu veg">
+
+            <div>
+
+                <img src="./Images/veg-burger.jpg" class="w-52 h-52 cursor-pointer">
+
+            </div>
+
+            <div>
+                <h1 class="font-bold">Veg Burger</h1>
+                <h1 class="m-1">$310</h1>
+                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.1(50)</h1>
+                <button class=" text-center w-24 h-12 text-black border bg-white border-black rounded">Add to
+                    Cart</button>
+
+            </div>
+
+        </div>
+
+
+        <!--Cheese burger-->
+        <div class="menu veg">
+
+            <div>
+
+                <img src="./Images/cheese-burger.jpg" class="w-52 h-52 cursor-pointer">
+
+            </div>
+
+            <div>
+                <h1 class="font-bold">Cheese Burger</h1>
+                <h1 class="m-1">$330</h1>
+                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.5(29)</h1>
+                <button class=" text-center w-24 h-12 text-black border bg-white border-black rounded">Add to
+                    Cart</button>
+
+            </div>
+
+        </div>
+
+
+        <!--crispy chicken burger-->
+        <div class="menu nonveg">
+
+            <div>
+
+                <img src="./Images/chicken-burger.jpg" class="w-52 h-52 cursor-pointer">
+
+            </div>
+
+            <div>
+                <h1 class="font-bold">Crispy Chicken Burger</h1>
+                <h1 class="m-1">$350</h1>
+                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.7(45)</h1>
+                <button class=" text-center w-24 h-12 text-black border bg-white border-black rounded">Add to
+                    Cart</button>
+
+            </div>
+
+        </div>
+
+
+
+        <!--Veg Makhani burger-->
+        <div class="menu veg">
+
+            <div>
+
+                <img src="./Images/veg-burger.jpg" class="w-52 h-52 cursor-pointer">
+
+            </div>
+
+            <div>
+                <h1 class="font-bold">Veg makhani Burger</h1>
+                <h1 class="m-1">$300</h1>
+                <h1 class="m-1"><i class="fa-regular fa-star"></i>3.9(45)</h1>
+                <button class=" text-center w-24 h-12 text-black border bg-white border-black rounded">Add to
+                    Cart</button>
+
+            </div>
+
+        </div>
+
+
+
+        <!--Paneer Deluxe-->
+        <div class="menu veg">
+
+            <div>
+
+                <img src="./Images/panner-burger.jpg" class="w-52 h-52 cursor-pointer">
+
+            </div>
+
+            <div>
+                <h1 class="font-bold">Paneer Deluxe</h1>
+                <h1 class="m-1">$340</h1>
+                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.7(86)</h1>
+                <button class=" text-center w-24 h-12 text-black border bg-white border-black rounded">Add to
+                    Cart</button>
+
+            </div>
+
+        </div>
+
+
+
+        <!--cheese Deluxe-->
+        <div class="menu veg">
+
+            <div>
+
+                <img src="./Images/cheese-burger.jpg" class="w-52 h-52 cursor-pointer">
+
+            </div>
+
+            <div>
+                <h1 class="font-bold">Cheese Deluxe</h1>
+                <h1 class="m-1">$350</h1>
+                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.4(63)</h1>
+                <button class=" text-center w-24 h-12 text-black border bg-white border-black rounded">Add to
+                    Cart</button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!--Sandwich-->
+    <div class="grid grid-cols-2  gap-40 md:grid-cols-3 p-10  ml-14 hidden" id="sandwich-menu">
+
+
+
+        <!--cheese sandwich-->
+        <div class="menu veg">
+
+            <div>
+
+                <img src="./Images/cheese-sandwich.jpg" class="w-52 h-52 cursor-pointer">
+
+            </div>
+
+            <div>
+                <h1 class="font-bold">Cheese sandwich</h1>
+                <h1 class="m-1">$300</h1>
+                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.4(63)</h1>
+                <button class=" text-center w-24 h-12 text-black border bg-white border-black rounded">Add to
+                    Cart</button>
+
+            </div>
+
+        </div>
+
+
+        <!--veg sandwich-->
+        <div class="menu veg">
+
+            <div>
+
+                <img src="./Images/veg-sandwich.jpg" class="w-52 h-52 cursor-pointer">
+
+            </div>
+
+            <div>
+                <h1 class="font-bold">Veg sandwich</h1>
+                <h1 class="m-1">$300</h1>
+                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.1(30)</h1>
+                <button class=" text-center w-24 h-12 text-black border bg-white border-black rounded">Add to
+                    Cart</button>
+
+            </div>
+
+        </div>
+
+
+        <!--corn sandwich-->
+        <div class="menu veg">
+
+            <div>
+
+                <img src="./Images/corn-sandwich.jpg" class="w-52 h-52 cursor-pointer">
+
+            </div>
+
+            <div>
+                <h1 class="font-bold">Corn sandwich</h1>
+                <h1 class="m-1">$270</h1>
+                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.0(29)</h1>
+                <button class=" text-center w-24 h-12 text-black border bg-white border-black rounded">Add to
+                    Cart</button>
+
+            </div>
+
+        </div>
+
+
+        <!--paneer sandwich-->
+        <div class="menu veg">
+
+            <div>
+
+                <img src="./Images/paneer-sandwich.jpg" class="w-52 h-52 cursor-pointer">
+
+            </div>
+
+            <div>
+                <h1 class="font-bold">Paneer sandwich</h1>
+                <h1 class="m-1">$330</h1>
+                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.6(96)</h1>
+                <button class=" text-center w-24 h-12 text-black border bg-white border-black rounded">Add to
+                    Cart</button>
+
+            </div>
+
+        </div>
+
+
+
+        <!--chicken sandwich-->
+        <div class="menu nonveg">
+
+            <div>
+
+                <img src="./Images/cheese-sandwich.jpg" class="w-52 h-52 cursor-pointer">
+
+            </div>
+
+            <div>
+                <h1 class="font-bold">Chicken sandwich</h1>
+                <h1 class="m-1">$380</h1>
+                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.8(163)</h1>
+                <button class=" text-center w-24 h-12 text-black border bg-white border-black rounded">Add to
+                    Cart</button>
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <!--wrap-->
+
+    <div class="grid grid-cols-2  gap-40 md:grid-cols-3 p-10  ml-14 hidden" id="wrap-menu">
+
+
+
+        <!--egg-->
+        <div class="menu nonveg">
+
+            <div>
+
+                <img src="./Images/eggwrap.jpg" class="w-52 h-52 cursor-pointer">
+
+            </div>
+
+            <div>
+                <h1 class="font-bold">Egg wrap</h1>
+                <h1 class="m-1">$250</h1>
+                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.4(63)</h1>
+                <button class=" text-center w-24 h-12 text-black border bg-white border-black rounded">Add to
+                    Cart</button>
+
+            </div>
+
+        </div>
+
+
+        <!--chicken wrap-->
+        <div class="menu nonveg">
+
+            <div>
+
+                <img src="./Images/chcicken-wrap.jpg" class="w-52 h-52 cursor-pointer">
+
+            </div>
+
+            <div>
+                <h1 class="font-bold">Chicken wrap</h1>
+                <h1 class="m-1">$340</h1>
+                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.1(310)</h1>
+                <button class=" text-center w-24 h-12 text-black border bg-white border-black rounded">Add to
+                    Cart</button>
+
+            </div>
+
+        </div>
+
+
+        <!--paneer wrap-->
+        <div class="menu veg">
+
+            <div>
+
+                <img src="./Images/panner-wrap.jpg" class="w-52 h-52 cursor-pointer">
+
+            </div>
+
+            <div>
+                <h1 class="font-bold">Paneer wrap</h1>
+                <h1 class="m-1">$290</h1>
+                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.1(219)</h1>
+                <button class=" text-center w-24 h-12 text-black border bg-white border-black rounded">Add to
+                    Cart</button>
+
+            </div>
+
+        </div>
+
+
+        <!--cheese wrap-->
+        <div class="menu veg">
+
+            <div>
+
+                <img src="./Images/vegwrap.jpg" class="w-52 h-52 cursor-pointer">
+
+            </div>
+
+            <div>
+                <h1 class="font-bold">Veg wrap</h1>
+                <h1 class="m-1">$230</h1>
+                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.6(96)</h1>
+                <button class=" text-center w-24 h-12 text-black border bg-white border-black rounded">Add to
+                    Cart</button>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--beverages-->
+
+    <div class="grid grid-cols-2  gap-40 md:grid-cols-3 p-10  ml-14 hidden" id="beverages-menu">
+
+        <!--coke-->
+        <div class="menu veg">
+
+            <div>
+
+                <img src="./Images/coke.jpg" class="w-52 h-52 cursor-pointer">
+
+            </div>
+
+            <div>
+                <h1 class="font-bold">coke</h1>
+                <h1 class="m-1">$170</h1>
+                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.6(96)</h1>
+                <button class=" text-center w-24 h-12 text-black border bg-white border-black rounded">Add to
+                    Cart</button>
+
+            </div>
+
+        </div>
+
+
+        <!--sprite-->
+        <div class="menu veg">
+
+            <div>
+
+                <img src="./Images/sprite.jpg" class="w-52 h-52 cursor-pointer">
+
+            </div>
+
+            <div>
+                <h1 class="font-bold">Sprite</h1>
+                <h1 class="m-1">$190</h1>
+                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.6(96)</h1>
+                <button class=" text-center w-24 h-12 text-black border bg-white border-black rounded">Add to
+                    Cart</button>
+
+            </div>
+
+        </div>
+
+        <!--thumpsup-->
+        <div class="menu veg">
+
+            <div>
+
+                <img src="./Images/thumpsup.jpg" class="w-52 h-52 cursor-pointer">
+
+            </div>
+
+            <div>
+                <h1 class="font-bold">Thumps up</h1>
+                <h1 class="m-1">$160</h1>
+                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.6(96)</h1>
+                <button class=" text-center w-24 h-12 text-black border bg-white border-black rounded">Add to
+                    Cart</button>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <!--blueberry mojito-->
+        <div class="menu veg">
+
+            <div>
+
+                <img src="./Images/blueberry-mojito.jpg" class="w-52 h-52 cursor-pointer">
+
+            </div>
+
+            <div>
+                <h1 class="font-bold">Blueberry mojito</h1>
+                <h1 class="m-1">$300</h1>
+                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.8(163)</h1>
+                <button class=" text-center w-24 h-12 text-black border bg-white border-black rounded">Add to
+                    Cart</button>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <!--mojito-->
+        <div class="menu veg">
+
+            <div>
+
+                <img src="./Images/mojito.jpg" class="w-52 h-52 cursor-pointer">
+
+            </div>
+
+            <div>
+                <h1 class="font-bold">Mojito</h1>
+                <h1 class="m-1">$290</h1>
+                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.6(96)</h1>
+                <button class=" text-center w-24 h-12 text-black border bg-white border-black rounded">Add to
+                    Cart</button>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+    </div>
+
+
+
+
+
+
+    <script>
+
+        let burger = document.getElementById("burger")
+        let burgermenu = document.getElementById("burger-menu")
+
+        let sandwich = document.getElementById("sandwich")
+        let sandwichmenu = document.getElementById("sandwich-menu")
+
+        let wrap = document.getElementById("wrap")
+        let wrapmenu = document.getElementById("wrap-menu")
+
+        let beverages = document.getElementById("beverages")
+        let beveragesmenu = document.getElementById("beverages-menu")
+
+        let mainimage = document.getElementById("mainimage")
+        burger.addEventListener("click", function () {
+            mainimage.classList.add("hidden")
+            burgermenu.classList.remove("hidden")
+            sandwichmenu.classList.add("hidden")
+            wrapmenu.classList.add("hidden")
+            beveragesmenu.classList.add("hidden")
+        })
+
+
+        sandwich.addEventListener("click", function () {
+            mainimage.classList.add("hidden")
+            sandwichmenu.classList.remove("hidden")
+            burgermenu.classList.add("hidden")
+            wrapmenu.classList.add("hidden")
+            beveragesmenu.classList.add("hidden")
+        })
+
+
+
+        wrap.addEventListener("click", function () {
+            mainimage.classList.add("hidden")
+            wrapmenu.classList.remove("hidden")
+            burgermenu.classList.add("hidden")
+            beveragesmenu.classList.add("hidden")
+            sandwichmenu.classList.add("hidden")
+        })
+
+
+
+
+        beverages.addEventListener("click", function () {
+            mainimage.classList.add("hidden")
+            beveragesmenu.classList.remove("hidden")
+            burgermenu.classList.add("hidden")
+            wrapmenu.classList.add("hidden")
+            sandwichmenu.classList.add("hidden")
+        })
+
+
+
+        let searchinput = document.getElementById("search")
+        let menuitems = document.querySelectorAll(".menu")
+        let containers = [burgermenu, sandwichmenu, wrapmenu, beveragesmenu]
+
+        searchinput.addEventListener("keyup", function (event) {
+            const searchterm = event.target.value.toLowerCase().trim()
+
+            if (searchterm === "") {
+                containers.forEach(container => container.classList.add("hidden"))
+                //menuitems.forEach(item => item.classList.remove("hidden"))
+                return
+            }
+
+            containers.forEach(container => container.classList.remove("hidden"))
+
+            menuitems.forEach(item => {
+                const itemname = item.querySelector(".font-bold").textContent.toLowerCase()
+                const isVeg = item.classList.contains("veg")
+                const isNonVeg = item.classList.contains("nonveg")
+
+
+                if (
+                    itemname.includes(searchterm) ||
+                    (searchterm === "veg" && isVeg) ||
+                    (searchterm === "nonveg" && isNonVeg)
+
+
+                ) {
+                    mainimage.classList.add("hidden");
+                    item.classList.remove("hidden")
+                } else {
+                    item.classList.add("hidden")
+                }
+
+            })
+        })
+    </script>
+
+
+
+</body>
+
+</html>

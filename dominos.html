@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominos Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+
+<body>
+    <!--navbar-->
+    <div class="bg-blue-300">
+        <div>
+
+            <div class="flex justify-between items-center m-10 p-3 gap-4">
+                <h1 class="text-center text-4xl p-3 font-extrabold text-blue-700">Dominos</h1>
+
+
+                <div class="border border-black rounded-3xl mr-5 h-12 w-96 items-center flex gap-4 p-2"
+                    id="menu-search-input">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input type="text" class="bg-blue-300 w-full placeholder-black" id="search"
+                        placeholder="Search for items....">
+
+                </div>
+                <i class="fa-solid fa-cart-shopping text-3xl"></i>
+            </div>
+        </div>
+
+
+
+        <!--main image section-->
+        <div class="flex justify-between items-center p-5">
+
+            <div>
+                <img src="./Images/dominos-main.jpg" id="mainimage"
+                    class=" w-96 h-40 transform transition duration-700 hover:scale-105">
+            </div>
+
+            <div class="h-56 w-1 bg-gray-700 rounded-full"></div>
+
+
+            <!--Menu selection-->
+
+            <div class="m-5">
+                <h1 class="text-3xl font-extrabold">Enjoy your cravings with our delicious food</h1>
+                <div class="flex justify-center items-center gap-24 text-xl font-semibold m-2 p-3">
+                    <h1 id="vegpizza" class="cursor-pointer hover:border rounded-xl p-1 hover:bg-purple-600"">Veg pizza</h1>
+                    <h1 id="nonvegpizza" class="cursor-pointer hover:border rounded-xl p-1 hover:bg-purple-600">Nonveg pizza</h1>
+
+                    <h1 id="beverages" class="cursor-pointer hover:border rounded-xl p-1 hover:bg-purple-600">Beverages</h1>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!--VegPizza-->
+
+
+
+    <div class="grid grid-cols-2  gap-36 md:grid-cols-3 p-10  ml-14 hidden" id="vegpizza-menu">
+
+
+
+
+
+        <!--farmhouse-->
+
+        <div class="menu veg border rounded-3xl shadow-lg overflow-hidden w-72">
+            <div class="relative">
+                <img src="./Images/farmhouse.jpg" class="w-72 h-72  cursor-pointer">
+                 <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+
+                <div class="absolute bottom-0 p-4 w-full flex items-center justify-between text-white">
+                    <div>
+                        <h1 class="font-bold text-xl">Farmhouse</h1>
+                        <h1 class="font-semibold">$400</h1>
+                    </div>
+                    <button class="bg-red-600 hover:bg-red-700 p-3 rounded-2xl font-semibold">Add</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!--veg extraveganza-->
+
+        <div class="menu veg border rounded-3xl shadow-lg overflow-hidden w-72">
+            <div class="relative">
+                <img src="./Images/veg-extraveganza.jpg" class="w-72 h-72  cursor-pointer">
+                 <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+
+                <div class="absolute bottom-0 p-4 w-full flex items-center justify-between text-white">
+                    <div>
+                        <h1 class="font-bold text-xl">Veg extraveganza</h1>
+                        <h1 class="font-semibold">$450</h1>
+                    </div>
+                    <button class="bg-red-600 hover:bg-red-700 p-3 rounded-2xl font-semibold">Add</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!--Peppy panner-->
+
+        <div class="menu veg border rounded-3xl shadow-lg overflow-hidden w-72">
+            <div class="relative">
+                <img src="./Images/peppy-panner.jpg" class="w-72 h-72  cursor-pointer">
+                 <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+
+                <div class="absolute bottom-0 p-4 w-full flex items-center justify-between text-white">
+                    <div>
+                        <h1 class="font-bold text-xl">Peppy panner</h1>
+                        <h1 class="font-semibold">$420</h1>
+                    </div>
+                    <button class="bg-red-600 hover:bg-red-700 p-3 rounded-2xl font-semibold">Add</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!--corn pizza-->
+
+        <div class="menu veg border rounded-3xl shadow-lg overflow-hidden w-72">
+            <div class="relative">
+                <img src="./Images/corn-pizza.jpg" class="w-72 h-72  cursor-pointer">
+                 <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+
+                <div class="absolute bottom-0 p-4 w-full flex items-center justify-between text-white">
+                    <div>
+                        <h1 class="font-bold text-xl">Corn pizza</h1>
+                        <h1 class="font-semibold">$450</h1>
+                    </div>
+                    <button class="bg-red-600 hover:bg-red-700 p-3 rounded-2xl font-semibold">Add</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <!--mexican-->
+
+        <div class="menu veg border rounded-3xl shadow-lg overflow-hidden w-72">
+            <div class="relative">
+                <img src="./Images/mexican-green.jpg" class="w-72 h-72  cursor-pointer">
+                 <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+
+                <div class="absolute bottom-0 p-4 w-full flex items-center justify-between text-white">
+                    <div>
+                        <h1 class="font-bold text-xl">Mexican green wave</h1>
+                        <h1 class="font-semibold">$450</h1>
+                    </div>
+                    <button class="bg-red-600 hover:bg-red-700 p-3 rounded-2xl font-semibold">Add</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!--veggie paradise-->
+
+        <div class="menu veg border rounded-3xl shadow-lg overflow-hidden w-72">
+            <div class="relative">
+                <img src="./Images/veggie-paradise.jpg" class="w-72 h-72  cursor-pointer">
+                 <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+
+                <div class="absolute bottom-0 p-4 w-full flex items-center justify-between text-white">
+                    <div>
+                        <h1 class="font-bold text-xl">Veggie Paradise</h1>
+                        <h1 class="font-semibold">$450</h1>
+                    </div>
+                    <button class="bg-red-600 hover:bg-red-700 p-3 rounded-2xl font-semibold">Add</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <!--nonveg pizza-->
+
+
+
+
+
+    <div class="grid grid-cols-2  gap-36 md:grid-cols-3 p-10  ml-14 hidden" id="nonvegpizza-menu">
+
+
+        <!--chicken pizza-->
+
+
+        <div class="menu nonveg w-72 rounded-3xl overflow-hidden shadow-lg">
+
+            <div class="relative">
+
+
+                <img src="./Images/chicken-pizza.jpg" class="w-72 h-72  cursor-pointer">
+
+              
+                <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+                <div class="absolute bottom-0 w-full p-4 flex justify-between items-center text-white">
+
+                    <div>
+                        <h1 class="font-bold text-xl">Chicken Pizza</h1>
+                        <h1 class="font-semibold">₹480</h1>
+                    </div>
+
+                    <button class="cart bg-red-600 hover:bg-red-700 text-white p-3 rounded-2xl font-semibold">
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--chicken tandoori-->
+
+        <div class="menu nonveg w-72 rounded-3xl overflow-hidden shadow-lg">
+
+            <div class="relative">
+
+
+                <img src="./Images/chicken-tandoori.jpg" class="w-72 h-72  cursor-pointer">
+
+             
+                <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+               
+                <div class="absolute bottom-0 w-full p-4 flex justify-between items-center text-white">
+
+                    <div>
+                        <h1 class="font-bold text-xl">Chicken Tandoori Pizza</h1>
+                        <h1 class="font-semibold">₹480</h1>
+                    </div>
+
+                    <button class="cart bg-red-600 hover:bg-red-700 text-white p-3 rounded-2xl font-semibold">
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!--pepper barbeque-->
+
+
+
+        <div class="menu nonveg w-72 rounded-3xl overflow-hidden shadow-lg">
+
+            <div class="relative">
+
+
+                <img src="./Images/pepper-barbeque.jpg" class="w-72 h-72  cursor-pointer">
+
+              
+                <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+              
+                <div class="absolute bottom-0 w-full p-4 flex justify-between items-center text-white">
+
+                    <div>
+                        <h1 class="font-bold text-xl">Pepper Barbeque</h1>
+                        <h1 class="font-semibold">₹480</h1>
+                    </div>
+
+                    <button class="cart bg-red-600 hover:bg-red-700 text-white p-3 rounded-2xl font-semibold">
+                        Add
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <!--beverages-->
+
+    <div class="grid grid-cols-2  gap-36 md:grid-cols-3 p-10  ml-14 hidden" id="beverages-menu">
+
+        <!--coke-->
+        <div class="menu beverages w-72 rounded-3xl overflow-hidden">
+
+            <div class="relative">
+
+                <img src="./Images/coke.jpg" class="w-72 h-72 cursor-pointer">
+                 <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+
+                <div class="absolute bottom-0 w-full p-4 flex justify-between items-center text-white">
+
+                    <div>
+                        <h1 class="font-bold text-xl">coke</h1>
+                        <h1 class="font-semibold">₹480</h1>
+                    </div>
+
+                    <button class="cart bg-red-600 hover:bg-red-700 text-white p-3 rounded-2xl font-semibold">
+                        Add
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <!--sprite-->
+        <div class="menu beverages w-72 rounded-3xl overflow-hidden">
+
+            <div class="relative">
+
+                <img src="./Images/sprite.jpg" class="w-72 h-72 cursor-pointer">
+                 <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+
+                <div class="absolute bottom-0 w-full p-4 flex justify-between items-center text-white">
+
+                    <div>
+                        <h1 class="font-bold text-xl">Sprite</h1>
+                        <h1 class="font-semibold">₹480</h1>
+                    </div>
+
+                    <button class="cart bg-red-600 hover:bg-red-700 text-white p-3 rounded-2xl font-semibold">
+                        Add
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <!--blueberry mojito-->
+
+        <div class="menu beverages  w-72 rounded-3xl overflow-hidden">
+
+            <div class="relative">
+
+                <img src="./Images/blueberry-mojito.jpg" class="w-72 h-72 cursor-pointer">
+                 <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+
+                <div class="absolute bottom-0 w-full p-4 flex justify-between items-center text-white">
+
+                    <div>
+                        <h1 class="font-bold text-xl">Blueberry mojito</h1>
+                        <h1 class="font-semibold">₹480</h1>
+                    </div>
+
+                    <button class="cart bg-red-600 hover:bg-red-700 text-white p-3 rounded-2xl font-semibold">
+                        Add
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <!--mojito-->
+        <div class="menu beverages  w-72 rounded-3xl overflow-hidden">
+
+            <div class="relative">
+
+                <img src="./Images/mojito.jpg" class="w-72 h-72 cursor-pointer">
+                 <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+                 
+
+
+                <div class="absolute bottom-0 w-full p-4 flex justify-between items-center text-white">
+
+                    <div>
+                        <h1 class="font-bold text-xl">Mojito</h1>
+                        <h1 class="font-semibold">₹480</h1>
+                    </div>
+
+                    <button class="cart bg-red-600 hover:bg-red-700 text-white p-3 rounded-2xl font-semibold">
+                        Add
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <script>
+
+
+
+
+        let vegpizza = document.getElementById("vegpizza")
+        let vegpizzamenu = document.getElementById("vegpizza-menu")
+
+        let nonvegpizza = document.getElementById("nonvegpizza")
+        let nonvegpizzamenu = document.getElementById("nonvegpizza-menu")
+
+        let beverages = document.getElementById("beverages")
+        let beveragesmenu = document.getElementById("beverages-menu")
+
+        vegpizza.addEventListener("click", function () {
+            vegpizzamenu.classList.remove("hidden")
+            nonvegpizzamenu.classList.add("hidden")
+            beveragesmenu.classList.add("hidden")
+        })
+
+
+        nonvegpizza.addEventListener("click", function () {
+            nonvegpizzamenu.classList.remove("hidden")
+            vegpizzamenu.classList.add("hidden")
+            beveragesmenu.classList.add("hidden")
+        })
+
+
+
+
+        beverages.addEventListener("click", function () {
+            beveragesmenu.classList.remove("hidden")
+            vegpizzamenu.classList.add("hidden")
+            nonvegpizzamenu.classList.add("hidden")
+
+        })
+
+
+
+        let searchinput = document.getElementById("search")
+        let menuitems = document.querySelectorAll(".menu")
+        let containers = [vegpizzamenu, nonvegpizzamenu, beveragesmenu]
+
+        searchinput.addEventListener("keyup", function (event) {
+            let searchterm = event.target.value.toLowerCase().trim()
+            if (searchterm === "") {
+                containers.forEach(container => container.classList.add("hidden"))
+
+            }
+            containers.forEach(container => container.classList.remove("hidden"))
+
+            menuitems.forEach(item => {
+                const itemname = item.querySelector(".font-bold").textContent.toLowerCase()
+                const isVeg = item.classList.contains("veg")
+                const isNonVeg = item.classList.contains("nonveg")
+
+
+                if (
+                    itemname.includes(searchterm) ||
+                    (searchterm === "veg" && isVeg) ||
+                    (searchterm === "nonveg" && isNonVeg)
+
+                ) {
+                    item.classList.remove("hidden")
+                } else {
+                    item.classList.add("hidden")
+                }
+
+            })
+        })
+
+    </script>
+
+</body>
+
+</html>
