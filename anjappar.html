@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- <link rel="stylesheet" href="anjappar.css"> -->
 </head>
 
 
@@ -30,9 +32,9 @@
         </div>
 
         <div class="flex gap-4 font-bold">
-            <h1 id="briyani" class="cursor-pointer inline-block  p-2 text-xl text-red-400 hover:text-black hover:border rounded-xl hover:bg-red-400">Briyani</h1>
-            <h1 id="starters" class="cursor-pointer text-xl  text-red-400  p-2 hover:text-black hover:border rounded-xl hover:bg-red-400">Starters</h1>
-            <h1 id="desert" class="cursor-pointer text-xl text-red-400  p-2 hover:text-black hover:border rounded-xl hover:bg-red-400">Desert</h1>
+            <h1 id="briyani" class="cursor-pointer text-red-300 hover:text-green-500 p-5">Briyani</h1>
+            <h1 id="starters" class="cursor-pointer text-red-400  hover:text-red-500 p-5">Starters</h1>
+            <h1 id="desert" class="cursor-pointer text-red-400 hover:text-red-500 p-5">Desert</h1>
 
         </div>
         <i class="fa-solid fa-cart-shopping"></i>
@@ -40,12 +42,12 @@
     </div>
     <hr class="border border-2 border-black">
 
-
+    <section class="food-order"></section>
 
 
     <!--menu selection-->
     <div class="relative">
-        <img src="./Images/briyani.jpg" class="w-full h-96" id="mainimage">
+        <img src="./Images/briyani.jpg" class="w-full" id="mainimage">
 
 
 
@@ -60,21 +62,20 @@
         <!--Mutton briyani-->
 
         <div class="menu nonveg">
+            <div class="product-box">
 
+                <div class="relative w-40 img-box">
+                    <img src="./Images/mutton-briyani.jpg"
+                        class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
+                    <button
+                        class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
 
-
-
-            <div class="relative w-40">
-                <img src="./Images/mutton-briyani.jpg"
-                    class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
-                <button
-                    class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
-
-            </div>
-            <div class="text-left">
-                <h1 class="font-bold">Mutton Briyani</h1>
-                <h1>$420</h1>
-                <h1><i class="fa-regular fa-star"></i>4.5(64)</h1>
+                </div>
+                <div class="text-left">
+                    <h1 class="font-bold ">Mutton Briyani</h1>
+                    <h1 class="price">$420</h1>
+                    <h1><i class="fa-regular fa-star"></i>4.5(64)</h1>
+                </div>
             </div>
 
 
@@ -88,23 +89,25 @@
 
         <div class="menu nonveg">
 
+            <div class="product-box">
 
 
 
-            <div class="relative w-40">
-                <img src="./Images/chicken-briyani.jpg"
-                    class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer ">
-                <button
-                    class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
+
+                <div class="relative w-40 img-box">
+                    <img src="./Images/chicken-briyani.jpg"
+                        class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer ">
+                    <button
+                        class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
+
+                </div>
+                <div class="text-left">
+                    <h1 class="font-bold">Chicken Briyani</h1>
+                    <h1 class="price">$360</h1>
+                    <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
+                </div>
 
             </div>
-            <div class="text-left">
-                <h1 class="font-bold">Chicken Briyani</h1>
-                <h1>$360</h1>
-                <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
-            </div>
-
-
 
         </div>
 
@@ -114,22 +117,22 @@
 
         <div class="menu nonveg">
 
+            <div class="product-box">
 
 
+                <div class="relative w-40 img-box">
+                    <img src="./Images/egg-briyani.jpg"
+                        class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
+                    <button
+                        class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
 
-            <div class="relative w-40">
-                <img src="./Images/egg-briyani.jpg"
-                    class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
-                <button
-                    class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
-
+                </div>
+                <div class="text-left w-40">
+                    <h1 class="font-bold">Egg Briyani</h1>
+                    <h1 class="price">$320</h1>
+                    <h1><i class="fa-regular fa-star"></i>4.4(20)</h1>
+                </div>
             </div>
-            <div class="text-left w-40">
-                <h1 class="font-bold">Egg Briyani</h1>
-                <h1>$320</h1>
-                <h1><i class="fa-regular fa-star"></i>4.4(20)</h1>
-            </div>
-
 
 
         </div>
@@ -141,22 +144,22 @@
 
         <div class="menu nonveg">
 
+            <div class="product-box">
 
+                <div class="relative w-40 img-box">
+                    <img src="./Images/nattukozhi-briyani.jpg"
+                        class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
+                    <button
+                        class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
 
-            <div class="relative w-40">
-                <img src="./Images/nattukozhi-briyani.jpg"
-                    class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
-                <button
-                    class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
+                </div>
 
+                <div class="text-left">
+                    <h1 class="font-bold">Nattukozhi Briyani</h1>
+                    <h1 class="price">$360</h1>
+                    <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
+                </div>
             </div>
-
-            <div class="text-left">
-                <h1 class="font-bold">Nattukozhi Briyani</h1>
-                <h1>$360</h1>
-                <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
-            </div>
-
 
 
         </div>
@@ -168,22 +171,22 @@
 
         <div class="menu veg">
 
+            <div class="product-box">
 
+                <div class="relative w-40 img-box">
+                    <img src="./Images/veg-briyani.jpg"
+                        class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
+                    <button
+                        class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
 
-            <div class="relative w-40">
-                <img src="./Images/veg-briyani.jpg"
-                    class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
-                <button
-                    class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
+                </div>
 
+                <div class="text-left">
+                    <h1 class="font-bold">Veg Briyani</h1>
+                    <h1  class="price">$280</h1>
+                    <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
+                </div>
             </div>
-
-            <div class="text-left">
-                <h1 class="font-bold">Veg Briyani</h1>
-                <h1>$280</h1>
-                <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
-            </div>
-
 
 
         </div>
@@ -196,21 +199,21 @@
         <div class="menu veg">
 
 
+            <div class="product-box">
+                <div class="relative w-40 img-box">
+                    <img src="./Images/panneer-65.jpg"
+                        class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
+                    <button
+                        class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
 
-            <div class="relative w-40">
-                <img src="./Images/panneer-65.jpg"
-                    class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
-                <button
-                    class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
+                </div>
 
+                <div class="text-left">
+                    <h1 class="font-bold">Paneer Briyani</h1>
+                    <h1 class="price">$320</h1>
+                    <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
+                </div>
             </div>
-
-            <div class="text-left">
-                <h1 class="font-bold">Paneer Briyani</h1>
-                <h1>$320</h1>
-                <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
-            </div>
-
 
 
         </div>
@@ -221,21 +224,21 @@
         <div class="menu veg">
 
 
+            <div class="product-box">
+                <div class="relative w-40 img-box">
+                    <img src="./Images/mushroom-briyani.jpg"
+                        class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
+                    <button
+                        class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
 
-            <div class="relative w-40">
-                <img src="./Images/mushroom-briyani.jpg"
-                    class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
-                <button
-                    class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
+                </div>
 
+                <div class="text-left">
+                    <h1 class="font-bold">Mushroom Briyani</h1>
+                    <h1 class="price">$260</h1>
+                    <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
+                </div>
             </div>
-
-            <div class="text-left">
-                <h1 class="font-bold">Mushroom Briyani</h1>
-                <h1>$260</h1>
-                <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
-            </div>
-
 
 
         </div>
@@ -245,7 +248,7 @@
 
 
 
-    
+
     <!--starters-->
 
 
@@ -256,23 +259,23 @@
         <!--chicken 65-->
 
         <div class="menu nonveg">
+            <div class="product-box">
 
 
+                <div class="relative w-40 img-box">
+                    <img src="./Images/chicken-65.jpg"
+                        class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
+                    <button
+                        class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
 
-            <div class="relative w-40">
-                <img src="./Images/chicken-65.jpg"
-                    class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
-                <button
-                    class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
+                </div>
 
+                <div class="text-left">
+                    <h1 class="font-bold">Chicken-65</h1>
+                    <h1 class="price">$360</h1>
+                    <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
+                </div>
             </div>
-
-            <div class="text-left">
-                <h1 class="font-bold">Chicken-65</h1>
-                <h1>$360</h1>
-                <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
-            </div>
-
 
 
         </div>
@@ -282,25 +285,25 @@
         <!--chicken Tandoori-->
 
         <div class="menu nonveg">
+            <div class="product-box">
 
 
+                <div class="relative w-40 img-box">
+                    <img src="./Images/tandoori-chicken.jpg"
+                        class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
+                    <button
+                        class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
 
-            <div class="relative w-40">
-                <img src="./Images/tandoori-chicken.jpg"
-                    class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
-                <button
-                    class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
+                </div>
+
+                <div class="text-left">
+                    <h1 class="font-bold">Tandoori chicken</h1>
+                    <h1 class="price">$360</h1>
+                    <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
+                </div>
+
 
             </div>
-
-            <div class="text-left">
-                <h1 class="font-bold">Tandoori chicken</h1>
-                <h1>$360</h1>
-                <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
-            </div>
-
-
-
         </div>
 
 
@@ -310,22 +313,22 @@
 
         <div class="menu veg">
 
+            <div class="product-box">
 
+                <div class="relative w-40 img-box">
+                    <img src="./Images/panneer-65.jpg"
+                        class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
+                    <button
+                        class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
 
-            <div class="relative w-40">
-                <img src="./Images/panneer-65.jpg"
-                    class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
-                <button
-                    class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
+                </div>
 
+                <div class="text-left">
+                    <h1 class="font-bold">Paneer 65</h1>
+                    <h1 class="price">$360</h1>
+                    <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
+                </div>
             </div>
-
-            <div class="text-left">
-                <h1 class="font-bold">Paneer 65</h1>
-                <h1>$360</h1>
-                <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
-            </div>
-
 
 
         </div>
@@ -337,22 +340,22 @@
 
         <div class="menu veg">
 
+            <div class="product-box">
 
+                <div class="relative w-40 img-box">
+                    <img src="./Images/mushroom-manchurian.jpg"
+                        class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
+                    <button
+                        class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
 
-            <div class="relative w-40">
-                <img src="./Images/mushroom-manchurian.jpg"
-                    class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
-                <button
-                    class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
+                </div>
 
+                <div class="text-left">
+                    <h1 class="font-bold">Mushroom Manchurian</h1>
+                    <h1 class="price">$360</h1>
+                    <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
+                </div>
             </div>
-
-            <div class="text-left">
-                <h1 class="font-bold">Mushroom Manchurian</h1>
-                <h1>$360</h1>
-                <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
-            </div>
-
 
 
         </div>
@@ -364,22 +367,22 @@
 
         <div class="menu veg">
 
+            <div class="product-box">
 
+                <div class="relative w-40 img-box">
+                    <img src="./Images/gopi-manchurian.jpg"
+                        class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
+                    <button
+                        class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
 
-            <div class="relative w-40">
-                <img src="./Images/gopi-manchurian.jpg"
-                    class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
-                <button
-                    class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
+                </div>
 
+                <div class="text-left">
+                    <h1 class="font-bold">Gopi Manchurian</h1>
+                    <h1 class="price">$360</h1>
+                    <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
+                </div>
             </div>
-
-            <div class="text-left">
-                <h1 class="font-bold">Gopi Manchurian</h1>
-                <h1>$360</h1>
-                <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
-            </div>
-
 
 
         </div>
@@ -390,21 +393,21 @@
         <div class="menu nonveg">
 
 
+            <div class="product-box">
+                <div class="relative w-40 img-box">
+                    <img src="./Images/mutton-sukka.jpg"
+                        class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
+                    <button
+                        class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
 
-            <div class="relative w-40">
-                <img src="./Images/mutton-sukka.jpg"
-                    class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
-                <button
-                    class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
+                </div>
 
+                <div class="text-left">
+                    <h1 class="font-bold">Mutton sukka</h1>
+                    <h1 class="price">$360</h1>
+                    <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
+                </div>
             </div>
-
-            <div class="text-left">
-                <h1 class="font-bold">Mutton sukka</h1>
-                <h1>$360</h1>
-                <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
-            </div>
-
 
 
         </div>
@@ -421,24 +424,23 @@
         <!--bread halwa-->
 
         <div class="menu desert">
+            <div class="product-box">
 
+                <div class="relative w-40 img-box">
+                    <img src="./Images/bread-halwa.jpg"
+                        class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
+                    <button
+                        class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
 
+                </div>
 
-            <div class="relative w-40">
-                <img src="./Images/bread-halwa.jpg"
-                    class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
-                <button
-                    class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
+                <div class="text-left">
+                    <h1 class="font-bold">Bread halwa</h1>
+                    <h1 class="price">$150</h1>
+                    <h1><i class="fa-regular fa-star"></i>4.8(300)</h1>
+                </div>
 
             </div>
-
-            <div class="text-left">
-                <h1 class="font-bold">Bread halwa</h1>
-                <h1>$150</h1>
-                <h1><i class="fa-regular fa-star"></i>4.8(300)</h1>
-            </div>
-
-
 
         </div>
 
@@ -446,25 +448,24 @@
 
         <!--gulab jamun-->
         <div class="menu desert">
+            <div class="product-box">
 
+                <div class="relative w-40 img-box">
+                    <img src="./Images/gulab-jamun.jpg"
+                        class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
+                    <button
+                        class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
 
+                </div>
 
-            <div class="relative w-40">
-                <img src="./Images/gulab-jamun.jpg"
-                    class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
-                <button
-                    class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
+                <div class="text-left">
+                    <h1 class="font-bold">Gulab jamun</h1>
+                    <h1 class="price">$100</h1>
+                    <h1><i class="fa-regular fa-star"></i>4.2(50)</h1>
+                </div>
+
 
             </div>
-
-            <div class="text-left">
-                <h1 class="font-bold">Gulab jamun</h1>
-                <h1>$100</h1>
-                <h1><i class="fa-regular fa-star"></i>4.2(50)</h1>
-            </div>
-
-
-
         </div>
 
 
@@ -474,21 +475,21 @@
         <div class="menu desert">
 
 
+            <div class="product-box">
+                <div class="relative w-40 img-box">
+                    <img src="./Images/shahi-thukda.jpg"
+                        class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
+                    <button
+                        class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
 
-            <div class="relative w-40">
-                <img src="./Images/shahi-thukda.jpg"
-                    class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
-                <button
-                    class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
+                </div>
 
+                <div class="text-left">
+                    <h1 class="font-bold">Shahi Thukda</h1>
+                    <h1 class="price">$180</h1>
+                    <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
+                </div>
             </div>
-
-            <div class="text-left">
-                <h1 class="font-bold">Shahi Thukda</h1>
-                <h1>$180</h1>
-                <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
-            </div>
-
 
 
         </div>
@@ -498,22 +499,22 @@
         <!--Basundhi-->
         <div class="menu desert">
 
+            <div class="product-box">
 
+                <div class="relative w-40 img-box">
+                    <img src="./Images/basundhi.jpg"
+                        class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
+                    <button
+                        class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
 
-            <div class="relative w-40">
-                <img src="./Images/basundhi.jpg"
-                    class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
-                <button
-                    class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
+                </div>
 
+                <div class="text-left">
+                    <h1 class="font-bold">Basundhi</h1>
+                    <h1 class="price">$120</h1>
+                    <h1><i class="fa-regular fa-star"></i>4.1(40)</h1>
+                </div>
             </div>
-
-            <div class="text-left">
-                <h1 class="font-bold">Basundhi</h1>
-                <h1>$120</h1>
-                <h1><i class="fa-regular fa-star"></i>4.1(40)</h1>
-            </div>
-
 
 
         </div>
@@ -522,22 +523,22 @@
         <!--carrot halwa-->
         <div class="menu desert">
 
+            <div class="product-box">
 
+                <div class="relative w-40 img-box">
+                    <img src="./Images/carrot-halwa.jpg"
+                        class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
+                    <button
+                        class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
 
-            <div class="relative w-40">
-                <img src="./Images/carrot-halwa.jpg"
-                    class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
-                <button
-                    class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
+                </div>
 
+                <div class="text-left">
+                    <h1 class="font-bold">Carrot halwa</h1>
+                    <h1 class="price">$150</h1>
+                    <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
+                </div>
             </div>
-
-            <div class="text-left">
-                <h1 class="font-bold">Carrot halwa</h1>
-                <h1>$150</h1>
-                <h1><i class="fa-regular fa-star"></i>4.6(30)</h1>
-            </div>
-
 
 
         </div>
@@ -547,22 +548,22 @@
         <!-- Vennila icecreams-->
         <div class="menu desert">
 
+            <div class="product-box">
 
+                <div class="relative w-40 img-box">
+                    <img src="./Images/vennila-icecream.jpg"
+                        class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
+                    <button
+                        class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
 
-            <div class="relative w-40">
-                <img src="./Images/vennila-icecream.jpg"
-                    class="w-40 h-40 hover:shadow-xl transform hover:translate-y-2 cursor-pointer">
-                <button
-                    class="cart absolute bottom-0 right-8 text-2xl w-24 h-12 text-black border bg-white border-white rounded">Add</button>
+                </div>
 
+                <div class="text-left">
+                    <h1 class="font-bold product-title"> Vennila Icecream</h1>
+                    <h1 class="price">$100</h1>
+                    <h1><i class="fa-regular fa-star"></i>4.6(40)</h1>
+                </div>
             </div>
-
-            <div class="text-left">
-                <h1 class="font-bold"> Vennila Icecream</h1>
-                <h1>$100</h1>
-                <h1><i class="fa-regular fa-star"></i>4.6(40)</h1>
-            </div>
-
 
 
         </div>
@@ -571,7 +572,7 @@
 
     </div>
 
-
+    <!-- <script src="anjappar.js"></script> -->
 
     <script>
         //briyani script
