@@ -176,7 +176,7 @@
 .restaurant-item img{
     transition: transform 0.5s ease;
 }
-.restaurant-item:hover .img{
+.restaurant-item:hover img{
     transform: scale(1.08);
 }
 .restaurant-item p,.restaurant-item span{
