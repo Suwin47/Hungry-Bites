@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Navigation Bar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orangered;
+    color: black;
+    padding: 20px;
+    gap: 10px;
+    /* position: sticky; */
+    top: 0;
+    
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 50%;
+    display: block;
+}
+
+.search-bar {
+    position: relative;
+    width: 80%;
+    margin: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 18px;
+}
+
+.search-bar i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu {
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+
+}
+
+
+
+/* Main Layout */
+
+.checkout{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 30px;
+}
+
+/* Delivery Information */
+
+.delivery-information{
+    width: 45%;
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 30px;
+}
+
+.delivery-information table{
+    width: 100%;
+}
+
+.delivery-information h2{
+    margin-bottom: 20px;
+}
+
+.delivery-information td{
+    padding-top: 10px;
+}
+
+.delivery-information input{
+    width: 100%;
+    height: 45px;
+
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+
+    padding-left: 12px;
+
+    outline: none;
+}
+
+.delivery-information input:focus{
+    border-color: orange;
+}
+
+/* Payment Method */
+
+.payment-method{
+    width: 45%;
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 30px;
+}
+
+.payment-method h2{
+    margin-bottom: 20px;
+}
+
+/* Payment Option */
+
+.payment-option{
+    border: 1px solid #e5e5e5;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    margin-bottom: 15px;
+
+    transition: 0.3s;
+}
+
+.payment-option:hover{
+    border-color: orange;
+}
+
+.radio-label{
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    cursor: pointer;
+}
+
+.radio-label input[type="radio"]{
+    width: 18px;
+    height: 18px;
+
+    accent-color: orange;
+}
+
+.title{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.tagline{
+    margin-left: 28px;
+    margin-top: 5px;
+
+    color: gray;
+    font-size: 13px;
+}
+
+/* Place Order */
+
+.place-order{
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.amount-section p{
+    font-size: 24px;
+    font-weight: bold;
+
+    margin-top: 5px;
+}
+
+#placeOrderBtn{
+    background: orange;
+    color: white;
+
+    border: none;
+
+    padding: 14px 28px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#placeOrderBtn:hover{
+    background: rgb(230, 149, 0);
+}
+
+/* Loading Screen */
+
+#loadingScreen{
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background: white;
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    z-index: 9999;
+}
+
+/* Loader */
+
+.loader{
+    width: 60px;
+    height: 60px;
+
+    border: 6px solid #eeeeee;
+    border-top: 6px solid orange;
+
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+
+    margin-bottom: 20px;
+}
+
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#loadingScreen p{
+    font-size: 18px;
+    color: #333;
+}
+
+
+
+
+@media(max-width:600px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .logo {
+        width: 190px;
+
+    }
+
+    .search-bar {
+        position: relative;
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .search-bar input::placeholder {
+        font-size: 9px;
+    }
+
+    .menu {
+        order: -1;
+        display: block;
+        cursor: pointer;
+
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+}
