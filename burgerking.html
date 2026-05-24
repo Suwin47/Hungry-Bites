@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="burgarking.css">
+</head>
+
+
+
+<body>
+    <!--navbar-->
+
+    <div class="flex justify-between items-center m-10">
+        <h1 class="text-center text-4xl p-3 font-extrabold text-red-400">Burger King</h1>
+        <img src="./Images/burger-logo.png" class="w-52">
+
+        <div class="border border-black rounded-3xl mr-5 h-12 w-96 items-center flex gap-4 p-2" id="menu-search-input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input type="text" id="search" placeholder="Search for items....">
+        </div>
+        <div id="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-item-count "></span>
+        </div>
+    </div>
+
+
+
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+            <!-- <div class="cart-box">
+                <img src="./Images/idli.jpg" alt="" class="cart-img">
+                <div class="cart-detail">
+                    <h2 class="cart-product-title">Idli</h2>
+                    regular fa-trash-can cart-remove" style="color: rgb(0, 4, 11);"></i><span class="cart-price">$90</span>
+                    <div class="cart-quantity">
+                        <button id="decrement">-</button>
+                        <span class="number">1</span>
+                        <button class="increment">+</button>
+                    </div>
+                </div>
+                <i class="fa-
+            </div> -->
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+        <button class="btn-buy">Buy Now</button>
+        <i class="fa-regular fa-circle-xmark" id="cart-close" style="color: rgb(0, 4, 11);"></i>
+    </div>
+
+
+
+
+
+    <!--main image section-->
+
+    <div>
+        <img src="./Images/burger-main.jpg" id="mainimage" class="transform transition duration-700 hover:scale-105">
+    </div>
+
+
+
+    <!--Menu selection-->
+
+    <div class="m-5">
+        <h1 class="text-3xl font-extrabold">Our Menu</h1>
+        <div class="flex justify-center items-center gap-24 text-xl font-semibold">
+            <h1 id="burger" class="cursor-pointer">Burger</h1>
+            <h1 id="sandwich" class="cursor-pointer">Sandwich</h1>
+            <h1 id="wrap" class="cursor-pointer">Wraps</h1>
+            <h1 id="beverages" class="cursor-pointer">Beverages</h1>
+
+        </div>
+    </div>
+
+    <section class="food-order">
+
+
+        <!--burger-->
+
+
+
+        <div class="grid grid-cols-2  gap-40 md:grid-cols-3 p-10  ml-14 hidden" id="burger-menu">
+
+
+
+            <!--chicken burger-->
+            <div class="menu nonveg">
+                <div class="product-box">
+                    <div class="img-box">
+
+                        <img src="./Images/chicken-burger.jpg" class="w-52 h-52 cursor-pointer">
+
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold product-title">Chicken Burger</h1>
+                        <div class="price-and-cart">
+                            <h1 class="m-1 price">$350</h1>
+                            <h1 class="m-1"><i class="fa-regular fa-star"></i>4.7(45)</h1>
+                            <button
+                                class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--Paneer burger-->
+            <div class="menu veg">
+                <div class="product-box">
+
+                    <div class="img-box">
+
+                        <img src="./Images/panner-burger.jpg" class="w-52 h-52 cursor-pointer">
+
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold product-title">Paneer Burger</h1>
+                        <div class="price-and-cart">
+                            <h1 class="m-1 price">$300</h1>
+                            <h1 class="m-1"><i class="fa-regular fa-star"></i>4.7(45)</h1>
+                            <button
+                                class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--Veg burger-->
+            <div class="menu veg">
+                <div class="product-box">
+                    <div class="img-box">
+
+                        <img src="./Images/veg-burger.jpg" class="w-52 h-52 cursor-pointer">
+
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold product-title">Veg Burger</h1>
+                        <div class="price-and-cart">
+                            <h1 class="m-1 price">$310</h1>
+                            <h1 class="m-1"><i class="fa-regular fa-star"></i>4.1(50)</h1>
+                            <button
+                                class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--Cheese burger-->
+            <div class="menu veg">
+                <div class="product-box">
+                    <div class="img-box">
+
+                        <img src="./Images/cheese-burger.jpg" class="w-52 h-52 cursor-pointer">
+
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold product-title">Cheese Burger</h1>
+                        <div class="price-and-cart">
+                            <h1 class="m-1 price">$330</h1>
+                            <h1 class="m-1"><i class="fa-regular fa-star"></i>4.5(29)</h1>
+                            <button
+                                class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!--crispy chicken burger-->
+            <div class="menu nonveg">
+                <div class="product-box">
+                    <div class="img-box">
+
+                        <img src="./Images/chicken-burger.jpg" class="w-52 h-52 cursor-pointer">
+
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold product-title">Crispy Chicken Burger</h1>
+                        <div class="price-and-cart">
+                            <h1 class="m-1 price">$350</h1>
+                            <h1 class="m-1"><i class="fa-regular fa-star"></i>4.7(45)</h1>
+                            <button
+                                class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--Veg Makhani burger-->
+            <div class="menu veg">
+                <div class="product-box">
+                    <div class="img-box">
+
+                        <img src="./Images/veg-burger.jpg" class="w-52 h-52 cursor-pointer">
+
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold product-title">Veg makhani Burger</h1>
+                        <div class="price-and-cart">
+                            <h1 class="m-1 price">$300</h1>
+                            <h1 class="m-1"><i class="fa-regular fa-star"></i>3.9(45)</h1>
+                            <button
+                                class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--Paneer Deluxe-->
+            <div class="menu veg">
+                <div class="product-box">
+                    <div class="img-box">
+
+                        <img src="./Images/panner-burger.jpg" class="w-52 h-52 cursor-pointer">
+
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold product-title">Paneer Deluxe</h1>
+                        <div class="price-and-cart">
+                            <h1 class="m-1 price">$340</h1>
+                            <h1 class="m-1"><i class="fa-regular fa-star"></i>4.7(86)</h1>
+                            <button
+                                class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--cheese Deluxe-->
+            <div class="menu veg">
+                <div class="product-box">
+                    <div class="img-box">
+
+                        <img src="./Images/cheese-burger.jpg" class="w-52 h-52 cursor-pointer">
+
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold product-title">Cheese Deluxe</h1>
+                        <div class="price-and-cart">
+                            <h1 class="m-1 price">$350</h1>
+                            <h1 class="m-1"><i class="fa-regular fa-star"></i>4.4(63)</h1>
+                            <button
+                                class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!--Sandwich-->
+        <div class="grid grid-cols-2  gap-40 md:grid-cols-3 p-10  ml-14 hidden" id="sandwich-menu">
+
+
+
+            <!--cheese sandwich-->
+            <div class="menu veg">
+                <div class="product-box">
+                    <div class="img-box">
+
+                        <img src="./Images/cheese-sandwich.jpg" class="w-52 h-52 cursor-pointer">
+
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold product-title">Cheese sandwich</h1>
+                        <div class="price-and-cart">
+                            <h1 class="m-1 price">$300</h1>
+                            <h1 class="m-1"><i class="fa-regular fa-star"></i>4.4(63)</h1>
+                            <button
+                                class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!--veg sandwich-->
+            <div class="menu veg">
+                <div class="product-box">
+                    <div class="img-box">
+
+                        <img src="./Images/veg-sandwich.jpg" class="w-52 h-52 cursor-pointer">
+
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold product-title">Veg sandwich</h1>
+                        <div class="price-and-cart">
+                            <h1 class="m-1 price">$300</h1>
+                            <h1 class="m-1"><i class="fa-regular fa-star"></i>4.1(30)</h1>
+                            <button
+                                class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!--corn sandwich-->
+            <div class="menu veg">
+                <div class="product-box">
+                    <div class="img-box">
+
+                        <img src="./Images/corn-sandwich.jpg" class="w-52 h-52 cursor-pointer">
+
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold product-title">Corn sandwich</h1>
+                        <div class="price-and-cart">
+                            <h1 class="m-1 price">$270</h1>
+                            <h1 class="m-1"><i class="fa-regular fa-star"></i>4.0(29)</h1>
+                            <button
+                                class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!--paneer sandwich-->
+            <div class="menu veg">
+                <div class="product-box">
+                    <div class="img-box">
+
+                        <img src="./Images/paneer-sandwich.jpg" class="w-52 h-52 cursor-pointer">
+
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold product-title">Paneer sandwich</h1>
+                        <div class="price-and-cart">
+                            <h1 class="m-1 price">$330</h1>
+                            <h1 class="m-1"><i class="fa-regular fa-star"></i>4.6(96)</h1>
+                            <button
+                                class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--chicken sandwich-->
+            <div class="menu nonveg">
+                <div class="product-box">
+                    <div class="img-box">
+
+                        <img src="./Images/cheese-sandwich.jpg" class="w-52 h-52 cursor-pointer">
+
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold product-title">Chicken sandwich</h1>
+                        <div class="price-and-cart">
+                            <h1 class="m-1 price">$380</h1>
+                            <h1 class="m-1"><i class="fa-regular fa-star"></i>4.8(163)</h1>
+                            <button
+                                class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+        <!--wrap-->
+
+        <div class="grid grid-cols-2  gap-40 md:grid-cols-3 p-10  ml-14 hidden" id="wrap-menu">
+
+
+
+            <!--egg-->
+            <div class="menu nonveg">
+                <div class="product-box">
+                    <div class="img-box">
+
+                        <img src="./Images/eggwrap.jpg" class="w-52 h-52 cursor-pointer">
+
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold product-title">Egg wrap</h1>
+                        <div class="price-and-cart">
+                            <h1 class="m-1 price">$250</h1>
+                            <h1 class="m-1"><i class="fa-regular fa-star"></i>4.4(63)</h1>
+                            <button
+                                class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!--chicken wrap-->
+            <div class="menu nonveg">
+                <div class="product-box">
+                    <div class="img-box">
+
+                        <img src="./Images/chcicken-wrap.jpg" class="w-52 h-52 cursor-pointer">
+
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold product-title">Chicken wrap</h1>
+                        <div class="price-and-cart">
+                            <h1 class="m-1 price">$340</h1>
+                            <h1 class="m-1"><i class="fa-regular fa-star"></i>4.1(310)</h1>
+                            <button
+                                class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!--paneer wrap-->
+            <div class="menu veg">
+                <div class="product-box">
+                    <div class="img-box">
+
+                        <img src="./Images/panner-wrap.jpg" class="w-52 h-52 cursor-pointer">
+
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold product-title">Paneer wrap</h1>
+                        <div class="price-and-cart">
+                            <h1 class="m-1 price">$290</h1>
+                            <h1 class="m-1"><i class="fa-regular fa-star"></i>4.1(219)</h1>
+                            <button
+                                class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!--cheese wrap-->
+            <div class="menu veg">
+                <div class="product-box">
+                    <div class="img-box">
+
+                        <img src="./Images/vegwrap.jpg" class="w-52 h-52 cursor-pointer">
+
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold product-title">Veg wrap</h1>
+                        <div class="price-and-cart">
+                            <h1 class="m-1 price">$230</h1>
+                            <h1 class="m-1"><i class="fa-regular fa-star"></i>4.6(96)</h1>
+                            <button
+                                class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--beverages-->
+
+        <div class="grid grid-cols-2  gap-40 md:grid-cols-3 p-10  ml-14 hidden" id="beverages-menu">
+
+            <!--coke-->
+            <div class="menu veg">
+                <div class="product-box">
+                    <div class="img-box">
+
+                        <img src="./Images/coke.jpg" class="w-52 h-52 cursor-pointer">
+
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold product-title">coke</h1>
+                        <div class="price-and-cart">
+                            <h1 class="m-1 price">$170</h1>
+                            <h1 class="m-1"><i class="fa-regular fa-star"></i>4.6(96)</h1>
+                            <button
+                                class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!--sprite-->
+            <div class="menu veg">
+                <div class="product-box">
+                    <div class="img-box">
+
+                        <img src="./Images/sprite.jpg" class="w-52 h-52 cursor-pointer">
+
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold product-title">Sprite</h1>
+                        <div class="price-and-cart">
+                            <h1 class="m-1 price">$190</h1>
+                            <h1 class="m-1"><i class="fa-regular fa-star"></i>4.6(96)</h1>
+                            <button
+                                class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--thumpsup-->
+            <div class="menu veg">
+                <div class="product-box">
+                    <div class="img-box">
+
+                        <img src="./Images/thumpsup.jpg" class="w-52 h-52 cursor-pointer">
+
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold product-title">Thumps up</h1>
+                        <div class="price-and-cart">
+                            <h1 class="m-1 price">$160</h1>
+                            <h1 class="m-1"><i class="fa-regular fa-star"></i>4.6(96)</h1>
+                            <button
+                                class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--blueberry mojito-->
+            <div class="menu veg">
+                <div class="product-box">
+                    <div class="img-box">
+
+                        <img src="./Images/blueberry-mojito.jpg" class="w-52 h-52 cursor-pointer">
+
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold product-title">Blueberry mojito</h1>
+                        <div class="price-and-cart">
+                            <h1 class="m-1 price">$300</h1>
+                            <h1 class="m-1"><i class="fa-regular fa-star"></i>4.8(163)</h1>
+                            <button
+                                class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--mojito-->
+            <div class="menu veg">
+                <div class="product-box">
+                    <div class="img-box">
+
+                        <img src="./Images/mojito.jpg" class="w-52 h-52 cursor-pointer">
+
+                    </div>
+
+                    <div>
+                        <h1 class="font-bold product-title">Mojito</h1>
+                        <div class="price-and-cart">
+                            <h1 class="m-1 price">$290</h1>
+                            <h1 class="m-1"><i class="fa-regular fa-star"></i>4.6(96)</h1>
+                            <button
+                                class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                to
+                                Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <script src="burgarking.js"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adayar anandha bhavan Menu</title>
+
+    <link rel="stylesheet" href="adayar.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+
+<body>
+
+
+
+    <!--navbar adayar anandha bhavan-->
+
+    <div class="flex justify-between items-center m-10 gap-7 ">
+        <h1 class="text-center text-4xl p-3  text-blue-400">Adayar Anandha Bhavan</h1>
+        <img src="./Images/adayar-logo.png" class="w-40">
+
+        <div class="border border-black rounded-3xl mr-5 h-12 w-96 items-center flex gap-4 p-2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input type="text" id="search" class="w-full" placeholder="Search for items....">
+        </div>
+
+
+
+        <div class="flex gap-3 justify-between text-blue-400 text-xl">
+            <h1 class="hover:text-pink-600"><a href="#tiffen">Tiffin</a></h1>
+            <h1 class="hover:text-pink-600"><a href="#starters">Starters</a></h1>
+            <h1 class="hover:text-pink-600"><a href="#sweets">Sweets</a></h1>
+        </div>
+        <div id="cart-icon">
+            <i class="fa-solid fa-cart-shopping" class="text-blue-400"
+                style="position: relative; display: flex; cursor: pointer;"></i>
+            <span class="cart-item-count "></span>
+        </div>
+
+    </div>
+
+
+    </div>
+
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+            <!-- <div class="cart-box">
+                <img src="./Images/idli.jpg" alt="" class="cart-img">
+                <div class="cart-detail">
+                    <h2 class="cart-product-title">Idli</h2>
+                    regular fa-trash-can cart-remove" style="color: rgb(0, 4, 11);"></i><span class="cart-price">$90</span>
+                    <div class="cart-quantity">
+                        <button id="decrement">-</button>
+                        <span class="number">1</span>
+                        <button class="increment">+</button>
+                    </div>
+                </div>
+                <i class="fa-
+            </div> -->
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+        <button class="btn-buy">Buy Now</button>
+        <i class="fa-regular fa-circle-xmark" id="cart-close" style="color: rgb(0, 4, 11);"></i>
+    </div>
+
+    <section class="food-order">
+
+        <!--tiffin-items-->
+
+        <div class="section">
+
+            <hr class="border border-black border-2">
+
+
+
+
+            <h1 id="tiffin" class="text-center text-4xl m-3">Tiffin items</h1>
+
+            <div class="grid grid-cols-2  gap-40 md:grid-cols-4 p-10  ml-14" id="tiffin-menu">
+                <!--Idli-->
+                <div class="menu tiffin">
+
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src="./Images/idli.jpg" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title font-bold">Idli</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$90</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.6(80)</h1>
+
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--dosa-->
+                <div class="menu tiffin">
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src="./Images/dosa.jpg" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title font-bold">Dosa</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$120</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.5(50)</h1>
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!--Idiyappam-->
+                <div class="menu tiffin">
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src="./Images/idiyappam.jpg" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title font-bold">Idiyappam</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$100</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.2(20)</h1>
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--Poori-->
+                <div class="menu tiffin">
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src="./Images/poori.jpg" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title font-bold">Poori</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$140</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.8(164)</h1>
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--pongal-->
+                <div class="menu tiffin">
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src="./Images/pongal.jpg" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title font-bold">Venpongal</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$110</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.8(60)</h1>
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--pesarattu-->
+                <div class="menu tiffin">
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src="./Images/pesarattu.jpg" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title font-bold">Pesarattu</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$90</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.1(29)</h1>
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--upma-->
+                <div class="menu tiffin">
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src="./Images/upma.jpg" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title font-bold">Upma</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$60</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.1(25)</h1>
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Starters-->
+        <div class="section">
+            <hr class="border border-black border-2">
+
+            <h1 id="starters" class="text-center text-4xl m-3">Starters</h1>
+
+            <div class="grid grid-cols-1  gap-40 md:grid-cols-4 p-10  ml-14" id="starters-menu">
+
+
+                <!--paneer 65-->
+                <div class="menu starters">
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src="./Images/panneer-65.jpg" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title font-bold">Paneer 65</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$220</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.1(25)</h1>
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <!--mushroom 65-->
+                <div class="menu starters">
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src="./Images/mushroom-manchurian.jpg" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title font-bold">Mushroom 65</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$240</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.3(125)</h1>
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <!--paneer tikka-->
+                <div class="menu starters">
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src="./Images/panner-tikka.jpg" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title font-bold">Paneer tikka</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$250</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.6(32)</h1>
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <!--potato wedges-->
+                <div class="menu starters">
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src="./Images/potato-wedges.jpg" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title font-bold">Potato wedges</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$180</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.2(49)</h1>
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--gopi 65-->
+                <div class="menu starters">
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src="./Images/gopi-65.webp" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title" class="font-bold">Gopi 65</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$200</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.1(25)</h1>
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--gopi manchurian-->
+                <div class="menu starters">
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src="./Images/gopi-manchurian.jpg" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title font-bold">Gopi manchurian</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$240</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.1(25)</h1>
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--honey potato-->
+                <div class="menu starters">
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src="./Images/honey-potato.jpg" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title font-bold">Honey chilli potato</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$260</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.5(97)</h1>
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--Baby corn 65-->
+                <div class="menu starters">
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src="./Images/baby-corn.jpg" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title font-bold">Baby corn 65</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$270</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.4(65)</h1>
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <!--Sweets-->
+
+        <div class="section">
+
+            <hr class="border border-black border-2">
+
+
+
+
+            <h1 id="sweets" class="text-center text-4xl m-3 ">Sweets</h1>
+            <div class="grid grid-cols-2  gap-40 md:grid-cols-4 p-10  ml-14" id="sweets-menu">
+
+                <!--rasagulla-->
+                <div class="menu sweets">
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src="./Images/rasagulla.jpeg" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title font-bold">Rasagulla</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$160(250gms)</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.1(25)</h1>
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <!--badam cake-->
+                <div class="menu sweets">
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src="./Images/badam cake.jpeg" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title font-bold">Badam cake</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$460(250gms)</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.4(50)</h1>
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--mysore pak-->
+                <div class="menu sweets">
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src="./Images/mysorepak.jpeg" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title font-bold">Mysore pak</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$260(250gms)</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.7(150)</h1>
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--kaju kathili-->
+                <div class="menu sweets">
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src="./Images/kajukathili.jpeg" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title font-bold">Kaju Kathili</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$460(250gms)</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.8(80)</h1>
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--laddu-->
+                <div class="menu sweets">
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src="./Images/laddu.jpeg" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title font-bold">Laddu</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$300(250gms)</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.1(29)</h1>
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--athirasam-->
+                <div class="menu sweets">
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src="./Images/athirasam.jpg" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title font-bold">Athirasam</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$320(250gms)</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.5(52)</h1>
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--gulab jamun-->
+                <div class="menu sweets">
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src=" ./Images/gulab-jamun.jpg" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title font-bold">Gulam Jamun</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$250(250gms)</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.4(50)</h1>
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--dry fruits laddu-->
+                <div class="menu sweets">
+                    <div class="product-box">
+
+                        <div class="img-box">
+
+                            <img src="./Images/dryladdu.jpeg" class="w-40 h-40 cursor-pointer">
+
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="product-title font-bold">Dry fruits laddu</h1>
+                            <div class="price-and-cart">
+                                <h1 class="m-1 price">$500(250gms)</h1>
+
+                                <h1 class="m-1"><i class="fa-regular fa-star"></i>4.7(45)</h1>
+                                <button
+                                    class=" text-center w-24 h-12 text-black border bg-white border-black rounded add-cart">Add
+                                    to
+                                    Cart</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="adayar.js"></script>
+
+
+
+
+
+</body>
+
+</html>
