@@ -657,41 +657,6 @@
         })
 
 
-
-
-
-
-
-        let cart = []
-
-        let cartbuttons = document.querySelectorAll(".cart")
-
-        cartbuttons.forEach(function (button) {
-
-            button.addEventListener("click", function () {
-
-                let product = button.parentElement.parentElement
-
-                let productname = product.querySelector(".font-bold").textContent
-
-                let productprice = product.querySelector(".text-left h1:nth-child(2)").textContent
-
-                let item = {
-                    name: productname,
-                    price: productprice
-                }
-
-                cart.push(item)
-
-                console.log(cart)
-
-                alert(productname + " added to cart")
-
-            })
-
-        })
-
-
     </script>
 
 
