@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants Page</title>
+
+    <!--CSS-->
+
+    <link rel="stylesheet" href="restaurant_page.css">
+
+    <!--CDN-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+
+  <div class="navbar">
+    <img src="./img/HungryBites.svg" alt="HungryBites Logo" class="logo">
+    <div class="search-bar">
+      <input type="text" placeholder="Search for Restaurants or Foods">
+      <i class="fa-solid fa-magnifying-glass"></i>
+
+    </div>
+    <div class="menu">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <ul class="nav-links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./restaurants.html">Restaurants</a></li>
+      <li><a href="./offers.html">Offers</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="#">
+          <i class="fas fa-shopping-cart"></i>
+        </a></li>
+      <li><a href="#">
+          <i class="fas fa-user"></i>
+        </a></li>
+    </ul>
+  </div>
+
+    <!--Main-->
+
+    <section class="container">
+        <h1>All Restaurants</h1>
+
+        <!--Filters-->
+
+        <div class="filters">
+            <button class="filter-btn">Filters</button>
+            <select class="rating-select">
+                <option value="all">Rating</option>
+                <option value="4+">4+ Rating</option>
+                <option value="3+">3+ Rating</option>
+            </select>
+
+            <select>
+                <option>Cuisine</option>
+                <option>Burger</option>
+                <option>Pizza</option>
+                <option>Biryani</option>
+                <option>Momos</option>
+            </select>
+
+            <select>
+                <option>Sort by</option>
+                <option>High Rating</option>
+                <option>Low Rating</option>
+            </select>
+        </div>
+
+        <!--Restaurants-->
+
+        <div class="restaurants">
+
+            <!--Card-->
+
+            <div class="card" data-rating="3.7">
+                <img src="img/restaurant img.jpg" alt="Adayar Anandha Bhavan">
+                <div class="card-content">
+                    <h2>Adayar Anandha Bhavan</h2>
+                    <div class="details">
+                        <span>🌟 3.7</span>
+                        <span>(2.4k+)</span>
+                        <span>30 Mins</span>
+                    </div>
+                    <p>Idly, Vada, Ghee Dosa, Poori, Ghee Pongal</p>
+                    <button>Free Delivery</button>
+                </div>
+            </div>
+
+            <div class="card" data-rating="4.2">
+                <img src="img/briyani1..jpg" alt="Anjappar Hotel">
+                <div class="card-content">
+                    <h2>Anjappar Hotel</h2>
+                    <div class="details">
+                        <span>🌟 4.2</span>
+                        <span>(3.7k+)</span>
+                        <span>45 Mins</span>
+                    </div>
+                    <p>Mutton Biryani, Chicken Biryani, Egg Biryani</p>
+                    <button>Free Delivery</button>
+                </div>
+            </div>
+
+            <div class="card" data-rating="3.9">
+                <img src="img/burger king1.jpg" alt="BurgerKing">
+                <div class="card-content">
+                    <h2>Burger King</h2>
+                    <div class="details">
+                        <span>🌟 3.9</span>
+                        <span>(1.7k+)</span>
+                        <span>25 Mins</span>
+                    </div>
+                    <p>Chicken Burger, Paneer Burger, Veg Burger</p>
+                    <button>Free Delivery</button>
+                </div>
+            </div>
+
+            <div class="card" data-rating="4.5">
+                <img src="img/pizza.jpg" alt="Dominos">
+                <div class="card-content">
+                    <h2>Dominos</h2>
+                    <div class="details">
+                        <span>🌟 4.5</span>
+                        <span>(4.2k+)</span>
+                        <span>40 Mins</span>
+                    </div>
+                    <p>Veg Pizza, Non Veg Pizza, Peppy Paneer</p>
+                    <button>Free Delivery</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!--Footer-->
+
+  <div class="footer">
+    <div class="footer-list">
+      <div class="footer-head">
+        <h1>HungryBites</h1>
+        <p>© 2026 HungryBites Limited</p>
+      </div>
+      <div class="footer-items">
+        <h3>Company</h3>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Team</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="footer-items ">
+        <h3>Support</h3>
+        <a href="#">Help Center</a>
+        <a href="#">Safety Information</a>
+        <a href="#">Cancellation Options</a>
+        <a href="#">Ride with Us</a>
+      </div>
+      <div class="footer-items">
+        <h3>Available in</h3>
+        <a href="#">Bangalore</a>
+        <a href="#">Chennai</a>
+        <a href="#">Hyderabad</a>
+        <a href="#">Delhi</a>
+      </div>
+      <div class="footer-items">
+        <h3>Legal</h3>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+      <div class="footer-icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+  </div>
+    
+    <!--JavaScript-->
+
+    <script src="restaurant_page.js"></script>
+</body>
+</html>
